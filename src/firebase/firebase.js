@@ -13,12 +13,12 @@ import {
 import { initializeApp } from 'firebase/app';
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: 'AIzaSyBMp5h8jeUwwFjpcfcwpHUkBFoIt4RO8jU',
-  authDomain: 'frontend-mentor-postapp.firebaseapp.com',
-  projectId: 'frontend-mentor-postapp',
-  storageBucket: 'frontend-mentor-postapp.appspot.com',
-  messagingSenderId: '630190102615',
-  appId: '1:630190102615:web:dbe3fa8f1c0e6ef4f9eb12',
+  apiKey: import.meta.env.VITE_FIREBASE_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECTID,
+  storageBucket: import.meta.env.VITE_FIREBASE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_SENDERID,
+  appId: import.meta.env.VITE_FIREBASE_API_ID,
 };
 
 // Initialize Firebase
