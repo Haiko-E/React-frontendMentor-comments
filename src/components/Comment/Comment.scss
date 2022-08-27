@@ -1,0 +1,13 @@
+.comment-box {
+  @include comment-box();
+}
+
+.container {
+  width: 100%;
+}
+
+.comment-box-reply {
+  width: 4em;
+  height: fit-content;
+  background-color: $clr-neu-400;
+}

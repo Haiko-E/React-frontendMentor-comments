@@ -1,0 +1,27 @@
+.vote-container {
+  background-color: $clr-neu-600;
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  width: 1.5em;
+  align-items: center;
+  height: fit-content;
+}
+
+.vote-container span {
+  color: $clr-prim-400;
+
+  font-weight: 500;
+  padding: 1.2em 0;
+}
+
+.vote-container svg {
+  & :active {
+    fill: $clr-prim-400;
+  }
+}
+
+.vote-container svg:hover {
+  cursor: pointer;
+}

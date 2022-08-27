@@ -1,0 +1,17 @@
+.button {
+  width: fit-content;
+  color: $clr-neu-700;
+  background-color: $clr-prim-400;
+  text-decoration: none;
+  padding: 0.7em 1.3em;
+  height: fit-content;
+  border-radius: 5px;
+
+  &:active {
+    background-color: $clr-prim-600;
+  }
+  &:hover {
+    cursor: pointer;
+    opacity: 70%;
+  }
+}

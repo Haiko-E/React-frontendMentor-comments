@@ -1,0 +1,11 @@
+// This partial contains styling that overrides global elements, such as the #root or body elements. In our example it is also importing the _variable.scss file to reference a color.
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+}

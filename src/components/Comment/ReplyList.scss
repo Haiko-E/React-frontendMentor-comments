@@ -1,0 +1,13 @@
+.replies {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40px auto;
+  grid-auto-rows: auto;
+}
+
+.sidebar {
+  grid-row: 1 / 500;
+  border-right: 3px solid $clr-prim-600;
+  margin: 0 20px;
+  border-radius: 20px;
+}

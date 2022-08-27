@@ -1,0 +1,41 @@
+.reply-box {
+  @include comment-box();
+  max-width: 650px;
+  margin: 10px auto;
+}
+
+.reply-avatar {
+  width: 50px;
+  height: 50px;
+}
+
+.reply-textarea {
+  font-family: 'Rubik';
+  padding: 10px;
+  border: 1px solid $clr-neu-400;
+  border-radius: 5px;
+  height: 100px;
+  width: 100%;
+  margin: 0 2em;
+  resize: none;
+
+  &:focus {
+    outline: 0px;
+    border: 1px solid $clr-prim-400;
+  }
+}
+
+.reply-btn {
+  margin-left: auto;
+  width: fit-content;
+  color: $clr-neu-700;
+  background-color: $clr-prim-400;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  height: fit-content;
+  border-radius: 5px;
+
+  &:active {
+    background-color: $clr-prim-600;
+  }
+}

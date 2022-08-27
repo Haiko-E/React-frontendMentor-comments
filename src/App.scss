@@ -1,0 +1,29 @@
+// @use './sass/global';
+// @use './sass/variables';
+
+body {
+  background-color: $clr-neu-600;
+}
+
+.comment {
+  margin: auto;
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.reply-container {
+  width: 100%;
+  display: flex;
+}
+
+.reply {
+  height: auto;
+  border-right: 2px solid $clr-prim-600;
+  margin: 0 1em;
+}
+
+.comment-container {
+  width: 100%;
+}

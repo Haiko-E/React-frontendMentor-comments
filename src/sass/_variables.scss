@@ -1,0 +1,11 @@
+// This partial contains repeatable property values, such as brand colors and sizes. By storing #002e25 in the variable $primaryDark2Color I can apply it to properties like color and border while preserving the option to change the color globally later on
+
+$clr-prim-400: hsl(238, 40%, 52%);
+$clr-prim-500: hsl(358, 79%, 66%);
+$clr-prim-600: hsl(239, 57%, 85%);
+$clr-prim-700: hsl(357, 100%, 86%);
+
+$clr-neu-400: hsl(212, 24%, 26%);
+$clr-neu-500: hsl(211, 10%, 45%);
+$clr-neu-600: hsl(223, 19%, 93%);
+$clr-neu-700: hsl(0, 0%, 100%);
