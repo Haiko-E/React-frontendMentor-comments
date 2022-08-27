@@ -1,24 +1,18 @@
 .modal {
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
-  z-index: 100;
-}
-
-.backdrop {
-  position: absolute;
   height: 100%;
-  width: 100%;
+  z-index: 100;
   background-color: rgba(0, 0, 0, 0.473);
+  justify-content: center;
+  align-items: center;
 }
 
 .overlay-container {
-  position: relative;
-  transform: translateX(-50%);
-  left: 50vw;
-  top: 30vh;
+  margin: 0 10px;
   color: $clr-neu-500;
   border-radius: 10px;
   background-color: $clr-neu-700;

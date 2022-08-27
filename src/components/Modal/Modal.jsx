@@ -22,8 +22,7 @@ const Modal = ({ showModal, comment }) => {
   };
 
   return (
-    <div className='modal'>
-      <div onClick={cancelHandler} className='backdrop'></div>
+    <div onClick={cancelHandler} className='modal'>
       <div className='overlay-container'>
         <h2>Delete Comment</h2>
         <p className='overlay-text'>
