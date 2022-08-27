@@ -7,6 +7,16 @@
   width: 1.5em;
   align-items: center;
   height: fit-content;
+
+  @media (max-width: $media-sm) {
+    justify-content: space-between;
+    width: 100px;
+    height: fit-content;
+    flex-direction: row;
+    order: 3;
+    margin-left: 1em;
+    margin-top: 1em;
+  }
 }
 
 .vote-container span {
@@ -14,6 +24,10 @@
 
   font-weight: 500;
   padding: 1.2em 0;
+
+  @media (max-width: $media-sm) {
+    padding: 0;
+  }
 }
 
 .vote-container svg {

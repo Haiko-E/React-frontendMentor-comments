@@ -1,5 +1,9 @@
 .comment-box {
   @include comment-box();
+
+  @media (max-width: $media-sm) {
+    flex-direction: column;
+  }
 }
 
 .container {

@@ -41,7 +41,7 @@ function App() {
 
   if (currentUser.isSuccess) {
     return (
-      <div>
+      <div className='comments'>
         {comments.map((comment) => {
           return (
             <div key={comment.id} className='comment'>

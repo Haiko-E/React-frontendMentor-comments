@@ -1,12 +1,22 @@
 .reply-box {
   @include comment-box();
   max-width: 650px;
-  margin: 10px auto;
+  margin: 10px 10px;
+  @media (max-width: $media-sm) {
+    flex-direction: column;
+  }
 }
 
 .reply-avatar {
   width: 50px;
   height: 50px;
+  @media (max-width: $media-sm) {
+    margin: 10px 0;
+    order: 2;
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }
 }
 
 .reply-textarea {
@@ -23,6 +33,10 @@
     outline: 0px;
     border: 1px solid $clr-prim-400;
   }
+
+  @media (max-width: $media-sm) {
+    margin: 0;
+  }
 }
 
 .reply-btn {
@@ -37,5 +51,12 @@
 
   &:active {
     background-color: $clr-prim-600;
+  }
+
+  @media (max-width: $media-sm) {
+    order: 4;
+    position: absolute;
+    right: 1.3em;
+    bottom: 2em;
   }
 }

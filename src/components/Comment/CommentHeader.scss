@@ -38,6 +38,12 @@
   margin-left: auto;
   color: $clr-prim-400;
   fill: $clr-prim-400;
+
+  @media (max-width: $media-sm) {
+    position: absolute;
+    bottom: 15%;
+    right: 5%;
+  }
 }
 
 .comment-replyingTo {

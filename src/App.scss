@@ -5,8 +5,16 @@ body {
   background-color: $clr-neu-600;
 }
 
+.comments {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .comment {
-  margin: auto;
+  width: 100%;
   max-width: 650px;
   display: flex;
   flex-direction: column;
