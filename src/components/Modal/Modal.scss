@@ -16,12 +16,13 @@
 
 .overlay-container {
   position: relative;
-  left: 30vw;
+  transform: translateX(-50%);
+  left: 50vw;
   top: 30vh;
   color: $clr-neu-500;
   border-radius: 10px;
   background-color: $clr-neu-700;
-  width: 40%;
+  max-width: 500px;
   height: fit-content;
   display: flex;
   justify-content: center;

@@ -4,7 +4,14 @@ import Reply from './components/Reply/Reply';
 import { getCurrentUser, getReplies } from './firebase/firebase';
 import { useQuery } from 'react-query';
 import { useState, useEffect } from 'react';
-import { onSnapshot, query, collection, doc, getDoc } from 'firebase/firestore';
+import {
+  onSnapshot,
+  query,
+  collection,
+  doc,
+  getDoc,
+  orderBy,
+} from 'firebase/firestore';
 import db from './firebase/firebase';
 import ReplyList from './components/Comment/ReplyList';
 
@@ -12,7 +19,7 @@ function App() {
   const [comments, setComments] = useState([]);
 
   useEffect(() => {
-    const q = query(collection(db, 'comments'));
+    const q = query(collection(db, 'comments'), orderBy('createdAt'));
     const unsubscribe = onSnapshot(q, (snapshot) => {
       let result = [];
       snapshot.forEach((doc) => {

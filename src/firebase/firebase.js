@@ -32,7 +32,10 @@ const db = getFirestore(app);
 
 export const getReplies = async (docID) => {
   console.log('fetching replies');
-  const q = query(collection(db, 'comments', docID, 'replies'));
+  const q = query(
+    collection(db, 'comments', docID, 'replies'),
+    orderBy('createdAt')
+  );
   const replies = await getDocs(q);
   let result = [];
 
