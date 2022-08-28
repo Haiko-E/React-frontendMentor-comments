@@ -1,7 +1,7 @@
 .reply-box {
   @include comment-box();
   max-width: 650px;
-  margin: 10px 10px;
+
   @media (max-width: $media-sm) {
     flex-direction: column;
   }
