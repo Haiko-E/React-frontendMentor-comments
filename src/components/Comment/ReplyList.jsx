@@ -27,13 +27,11 @@ const ReplyList = ({ comment, currentUser }) => {
       <div className='sidebar'></div>
       {replies.map((reply) => {
         return (
-          <>
-            <Comment
-              key={`reply=${reply.id}`}
-              comment={reply}
-              currentUser={currentUser}
-            />
-          </>
+          <Comment
+            key={`reply=${reply.id}`}
+            comment={reply}
+            currentUser={currentUser}
+          />
         );
       })}
     </div>
