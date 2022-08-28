@@ -28,7 +28,11 @@ const ReplyList = ({ comment, currentUser }) => {
       {replies.map((reply) => {
         return (
           <>
-            <Comment comment={reply} currentUser={currentUser} />
+            <Comment
+              key={`reply=${reply.id}`}
+              comment={reply}
+              currentUser={currentUser}
+            />
           </>
         );
       })}
